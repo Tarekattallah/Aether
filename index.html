@@ -3,106 +3,903 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#100c16">
-  <meta name="description" content="Quin Tech لتطوير المواقع والمتاجر الإلكترونية وأنظمة ERP والبرمجيات المخصصة في مصر والخليج والوطن العربي.">
-  <title>Quin Tech — حلول برمجية للأعمال</title>
+  <title>AETHER — The Invisible Force Behind Intelligent Systems | إيثر</title>
+  <meta name="description" content="AETHER (إيثر) — العنصر الخامس في البرمجيات والذكاء الاصطناعي. فريق تأسيسي من 5 مهندسين يمثلون شريكك التقني لتطوير الأنظمة الذكية، أتمتة العمليات، وبناء برمجيات مخصصة.">
+  <meta name="keywords" content="Aether, إيثر, ذكاء اصطناعي, برمجيات مخصصة, أتمتة الأعمال, Agentic Workflows, Fractional CTO, هندسة نظم, مصر, الخليج">
+  <meta name="theme-color" content="#08090d">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="AETHER — The Invisible Force Behind Intelligent Systems">
+  <meta property="og:description" content="العنصر الخامس في البرمجيات والذكاء الاصطناعي. فريق تأسيسي من 5 مهندسين يمثلون شريكك التقني للأنظمة الذكية والأتمتة.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tarekattallah.github.io/Aether/">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
   <script src="site.js" defer></script>
 </head>
 <body>
-  <header class="top">
-    <div class="wrap nav">
-      <a class="brand" href="#home" dir="ltr"><span class="mark">Q</span> Quin<span>Tech</span></a>
-      <nav aria-label="التنقل الرئيسي"><a href="#services">الخدمات</a><a href="#scope">دليل التكلفة</a><a href="#process">طريقة العمل</a><a href="#faq">الأسئلة</a></nav>
-      <a class="button small" href="#brief">ابدأ مشروعك <span>↖</span></a>
+
+  <!-- Ambient Ether Canvas Background -->
+  <canvas id="ether-canvas" aria-hidden="true"></canvas>
+
+  <!-- Sticky Engineering Navigation -->
+  <header class="top-header">
+    <div class="wrap nav-container">
+      <a class="brand" href="#home" dir="ltr" aria-label="AETHER Homepage">
+        <span class="aether-symbol">
+          <svg viewBox="0 0 40 40" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,2 37,14 31,35 9,35 3,14" stroke="currentColor" stroke-width="2" fill="none" opacity="0.4"/>
+            <polygon points="20,7 33,16 28,32 12,32 7,16" stroke="var(--cyan)" stroke-width="2" fill="rgba(0, 242, 254, 0.1)"/>
+            <circle cx="20" cy="20" r="4" fill="var(--cyan)" class="core-glow"/>
+          </svg>
+        </span>
+        <span class="brand-text">AETHER</span>
+        <span class="brand-badge">5th Element</span>
+      </a>
+
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#philosophy">الفلسفة</a>
+        <a href="#capabilities">الحلول والقدرات</a>
+        <a href="#sandbox">معمل المعماريات</a>
+        <a href="#model">فريق الـ 5 مهندسين</a>
+        <a href="#pitch">عرض الـ 30 ثانية</a>
+        <a href="#scope">حاسبة النطاق</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="contact-pill" href="https://wa.me/201061258009" target="_blank" rel="noopener">
+          <span class="pulse-dot"></span>
+          <span>واتساب مباشر</span>
+          <span class="arrow" dir="ltr">↗</span>
+        </a>
+      </div>
     </div>
   </header>
+
   <main id="home">
-    <section class="hero wrap">
-      <div class="hero-copy">
-        <div class="label"><i></i> هندسة البرمجيات للأعمال</div>
-        <h1>من فكرة<br>إلى <em>نظام يعمل.</em></h1>
-        <p>نطوّر مواقع ومتاجر إلكترونية وأنظمة ERP وبرمجيات مخصصة للشركات في مصر والخليج والوطن العربي.</p>
-        <div class="actions"><a class="button" href="#brief">جهّز طلب مشروعك <span>↖</span></a><a class="outline" href="#services">استكشف الخدمات <span>↓</span></a></div>
+    
+    <!-- Hero Section -->
+    <section class="hero-section wrap">
+      <div class="hero-badge">
+        <span class="badge-icon">⬡</span>
+        <span class="badge-text">الفريق التأسيسي: 5 مهندسين متخصصين · Fractional CTO & Agile Tech Partner</span>
       </div>
-      <div class="visual" id="visual" data-system="web">
-        <div class="visual-top" dir="ltr"><span>◈ &nbsp; QUIN SYSTEMS</span><span>INTERACTIVE / 01</span></div>
-        <svg viewBox="0 0 560 400" role="img" aria-labelledby="graph-title">
-          <title id="graph-title">رسم تفاعلي يوضح وحدات الحل البرمجي</title>
-          <defs>
-            <linearGradient id="edge" x2="0" y2="1"><stop stop-color="#ffa7b9"/><stop offset="1" stop-color="#ff366d" stop-opacity=".16"/></linearGradient>
-            <radialGradient id="light"><stop stop-color="#ff386d" stop-opacity=".28"/><stop offset="1" stop-color="#ff386d" stop-opacity="0"/></radialGradient>
-            <linearGradient id="tile" x2="1" y2="1"><stop stop-color="#fa4477"/><stop offset="1" stop-color="#5d254c"/></linearGradient>
-          </defs>
-          <ellipse cx="280" cy="207" rx="250" ry="188" fill="url(#light)"/>
-          <g class="orbits" fill="none"><ellipse cx="280" cy="204" rx="218" ry="139"/><ellipse cx="280" cy="204" rx="176" ry="109"/><ellipse cx="280" cy="204" rx="133" ry="81"/></g>
-          <g class="wires"><path d="M280 200 115 125M280 200 440 115M280 200 115 285M280 200 440 285" fill="none"/><circle class="pulse" cx="440" cy="115" r="5"/><circle class="pulse two" cx="115" cy="285" r="5"/></g>
-          <g class="core">
-            <path d="M181 208 280 263 379 208 379 239 280 296 181 239Z" fill="#30182d" stroke="#85405d"/>
-            <path d="M181 206 280 151 379 206 280 263Z" fill="#361f36" stroke="#a85073"/>
-            <path d="M205 173 280 132 355 173 355 205 280 248 205 205Z" fill="#582444" stroke="#e46689"/>
-            <path d="M205 173 280 132 355 173 280 216Z" fill="url(#tile)" stroke="url(#edge)" stroke-width="2"/>
-            <text x="280" y="186" text-anchor="middle" fill="#fff4f7" font-size="32" font-weight="800">Q</text>
-          </g>
-          <g class="node" transform="translate(115 125)"><rect x="-48" y="-18" width="96" height="36" rx="9"/><text class="node-label" y="5" text-anchor="middle" id="node-1">UI / UX</text></g>
-          <g class="node" transform="translate(440 115)"><rect x="-48" y="-18" width="96" height="36" rx="9"/><text class="node-label" y="5" text-anchor="middle" id="node-2">CMS</text></g>
-          <g class="node" transform="translate(115 285)"><rect x="-48" y="-18" width="96" height="36" rx="9"/><text class="node-label" y="5" text-anchor="middle" id="node-3">SEO</text></g>
-          <g class="node" transform="translate(440 285)"><rect x="-48" y="-18" width="96" height="36" rx="9"/><text class="node-label" y="5" text-anchor="middle" id="node-4">API</text></g>
-        </svg>
-        <div class="visual-tabs" aria-label="تغيير وحدات الرسم">
-          <button type="button" data-visual="web" aria-pressed="true">مواقع</button>
-          <button type="button" data-visual="store" aria-pressed="false">متاجر</button>
-          <button type="button" data-visual="erp" aria-pressed="false">ERP</button>
-          <button type="button" data-visual="custom" aria-pressed="false">برمجيات</button>
+
+      <div class="hero-content">
+        <div class="hero-headings">
+          <h1 class="hero-title">
+            القوة الخفية خلف<br>
+            <span class="text-gradient">أنظمتك الذكية.</span>
+          </h1>
+          <p class="hero-tagline-en" dir="ltr">The Invisible Force Behind Intelligent Systems</p>
+          <p class="hero-description">
+            زي ما "الإيثر" تاريخياً هو العنصر الخامس الخفي اللي بيربط أرجاء الكون وينقل طاقته؛ إحنا فريق هندسي مكوّن من <strong>5 مهندسين مؤسسين</strong> بنمثّل "العنصر المكمل" لشركتك. بنبني برمجياتك، نؤتمت عملياتك بالذكاء الاصطناعي، ونربط أنظمتك المعقدة بسلاسة خفية وبدون تعقيد إداري.
+          </p>
+        </div>
+
+        <div class="hero-cta-group">
+          <a class="btn btn-primary" href="https://wa.me/201061258009?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%81%D8%B1%D9%8A%D9%82%20AETHER%D8%8C%20%D8%A3%D9%88%D8%AF%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AC%D8%AF%D9%8A%D8%AF." target="_blank" rel="noopener">
+            <span>تحدث مع الفريق الهندسي</span>
+            <span class="icon" dir="ltr">↗</span>
+          </a>
+          <a class="btn btn-secondary" href="#scope">
+            <span>احسب نطاق مشروعك وتكلفته</span>
+            <span class="icon">↓</span>
+          </a>
+        </div>
+
+        <!-- Trust Indicators & Location -->
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-value">5</span>
+            <span class="metric-label">مهندسين مؤسسين متخصصين</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-value">100%</span>
+            <span class="metric-label">أكواد وبنى مخصصة بدون قوالب</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-value">القاهرة</span>
+            <span class="metric-label">مقرنا الرئيسي · نخدم مصر والخليج</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Core Interactive Console -->
+      <div class="hero-visual-card">
+        <div class="console-header" dir="ltr">
+          <div class="console-controls">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="console-title">AETHER_CORE_SYSTEM // v5.0-STABLE</span>
+          <span class="console-status"><span class="ping"></span>ONLINE</span>
+        </div>
+
+        <!-- Dynamic Visualization Diagram -->
+        <div class="console-body">
+          <div class="architecture-diagram" id="hero-architecture">
+            <!-- Central Node: The 5th Element -->
+            <div class="hub-center">
+              <div class="hub-circle">
+                <span class="hub-symbol">Æ</span>
+                <span class="hub-label">AETHER</span>
+                <span class="hub-sub">The 5th Element</span>
+              </div>
+              <div class="pulse-wave"></div>
+            </div>
+
+            <!-- Surrounding Connected Elements (The 5 Foundations) -->
+            <div class="hub-node node-1" data-node="ai">
+              <span class="node-code">01</span>
+              <span class="node-title">AI & Agents</span>
+              <span class="node-tech">LLMs · Agentic Flow</span>
+            </div>
+
+            <div class="hub-node node-2" data-node="software">
+              <span class="node-code">02</span>
+              <span class="node-title">Custom SaaS</span>
+              <span class="node-tech">Scalable Engines</span>
+            </div>
+
+            <div class="hub-node node-3" data-node="integration">
+              <span class="node-code">03</span>
+              <span class="node-title">Systems Sync</span>
+              <span class="node-tech">APIs · ERP Bridges</span>
+            </div>
+
+            <div class="hub-node node-4" data-node="uiux">
+              <span class="node-code">04</span>
+              <span class="node-title">UI/UX Engine</span>
+              <span class="node-tech">High Conversion</span>
+            </div>
+
+            <div class="hub-node node-5" data-node="mvp">
+              <span class="node-code">05</span>
+              <span class="node-title">Rapid MVP</span>
+              <span class="node-tech">Market-Ready</span>
+            </div>
+          </div>
+
+          <div class="console-caption">
+            <span class="caption-lead">الرابط التقني:</span>
+            <span id="console-caption-text">شبكة ذكية متزامنة تدير بياناتك وتؤتمت مسارات العمل دون أي توقف أو تدخل يدوي.</span>
+          </div>
         </div>
       </div>
     </section>
-    <div class="region"><div class="wrap"><span>نعمل مع فرق في</span><b>مصر</b><i></i><b>الخليج</b><i></i><b>الوطن العربي</b></div></div>
-    <section class="wrap section" id="services">
-      <div class="section-head"><div class="eyebrow">01 / الخدمات</div><h2>ما الذي تريد بناءه؟</h2><p>اختر نقطة البداية حسب احتياج نشاطك، وشوف المكوّنات الأساسية لكل حل.</p></div>
-      <div class="cards">
-        <article class="card"><div class="icon">⌘</div><h3>المواقع الإلكترونية</h3><p>من صفحات الهبوط إلى مواقع الشركات متعددة اللغات، بواجهات متجاوبة ولوحة لإدارة المحتوى.</p><a href="#brief" data-project="web">جهّز طلب موقع ↖</a></article>
-        <article class="card"><div class="icon">◇</div><h3>المتاجر الإلكترونية</h3><p>كتالوج منتجات وسلة وطلبات، مع ربط الدفع والشحن والمخزون حسب احتياجات المتجر.</p><a href="#brief" data-project="store">جهّز طلب متجر ↖</a></article>
-        <article class="card"><div class="icon">▦</div><h3>أنظمة ERP</h3><p>اربط المبيعات والمخزون والمشتريات والتقارير، وحدّد صلاحيات كل فريق في نظام واحد.</p><a href="#brief" data-project="erp">جهّز طلب نظام ERP ↖</a></article>
-        <article class="card"><div class="icon">⟨/⟩</div><h3>برمجيات مخصصة</h3><p>تطبيقات وبوابات عملاء ولوحات تشغيل وتكاملات API مبنية على طريقة عمل فريقك.</p><a href="#brief" data-project="custom">جهّز طلب برمجيات ↖</a></article>
+
+    <!-- Section 1: The 5th Element Philosophy (فلسفة الاسم والربط الهندسي) -->
+    <section class="section philosophy-section" id="philosophy">
+      <div class="wrap">
+        <div class="section-tag">
+          <span class="tag-number">01</span>
+          <span class="tag-text">فلسفة الهوية والاسم · THE 5TH ELEMENT</span>
+        </div>
+        
+        <div class="split-layout">
+          <div class="split-col-text">
+            <h2 class="section-title">
+              لماذا أطلقنا على أنفسنا اسم <span class="text-gradient">AETHER (إيثر)</span>؟
+            </h2>
+            <div class="story-block">
+              <div class="story-item">
+                <div class="story-icon">⬡</div>
+                <div class="story-content">
+                  <h3>العنصر الخامس الذي يربط الكون</h3>
+                  <p>
+                    في الفلسفة القديمة، بعد العناصر الأربعة المعروفة (الماء، الهواء، النار، التراب)، أضاف العلماء "الإيثر" كعنصر خامس نادر وخفي، وظيفته الأساسية هي ملء الفراغ الكوني وإمساك كل العناصر ببعضها في وحدة متماسكة.
+                  </p>
+                </div>
+              </div>
+
+              <div class="story-item">
+                <div class="story-icon">⚡</div>
+                <div class="story-content">
+                  <h3>القوة الخفية خلف السوفت وير والذكاء الاصطناعي</h3>
+                  <p>
+                    تاريخياً، الإيثر هو "المادة غير المرئية التي تنقل الطاقة وتربط الأشياء ببعضها" — تماماً مثل شبكات <em>Ethernet</em> وعملة <em>Ethereum</em>. وهذا تحديداً هو جوهر البرمجيات والـ AI اليوم: <strong>قوة رقمية خفية وذكية لا تراها بالعين</strong>، لكنها تدير أعمالك، وتزامن أنظمتك، وتتخذ القرارات الحاسمة بدون تعقيد يشعر به عميلك.
+                  </p>
+                </div>
+              </div>
+
+              <div class="story-item">
+                <div class="story-icon">5</div>
+                <div class="story-content">
+                  <h3>5 مهندسين.. العنصر المكمل لشركتك</h3>
+                  <p>
+                    قد تمتلك الفكرة، الرؤية التسويقية، والمبيعات؛ لكن ينقصك "العنصر الخامس" لربط أركان مشروعك وتحويله إلى واقع تقني صلب. نحن 5 مهندسين مؤسسين نندمج مع فريقك كذراع تقني متكامل (Fractional CTO Team) يمنحك القوة الهندسية دون تكاليف التوظيف الباهظة أو البطء الإداري.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="split-col-visual">
+            <div class="elements-card">
+              <div class="elements-header">
+                <span class="badge-mini">نظام العناصر المتكامل</span>
+                <span class="code-ref" dir="ltr">CORE_EQUATION: 4+1=PERFECT_SYSTEM</span>
+              </div>
+
+              <div class="elements-grid">
+                <div class="element-box basic">
+                  <span class="elem-sym">💧</span>
+                  <span class="elem-name">الماء</span>
+                  <span class="elem-meta">فكرة المشروع</span>
+                </div>
+                <div class="element-box basic">
+                  <span class="elem-sym">💨</span>
+                  <span class="elem-name">الهواء</span>
+                  <span class="elem-meta">السوق والجمهور</span>
+                </div>
+                <div class="element-box basic">
+                  <span class="elem-sym">🔥</span>
+                  <span class="elem-name">النار</span>
+                  <span class="elem-meta">التسويق والمبيعات</span>
+                </div>
+                <div class="element-box basic">
+                  <span class="elem-sym">🌍</span>
+                  <span class="elem-name">التراب</span>
+                  <span class="elem-meta">رأس المال والتشغيل</span>
+                </div>
+              </div>
+
+              <div class="element-unifier">
+                <div class="unifier-bracket"></div>
+                <div class="unifier-result">
+                  <div class="unifier-badge">العنصر الخامس المكمل</div>
+                  <div class="unifier-brand">
+                    <span class="unifier-title">AETHER · إيثر</span>
+                    <span class="unifier-subtitle">فريق الـ 5 مهندسين + الذكاء الاصطناعي وهندسة النظم</span>
+                  </div>
+                  <p class="unifier-desc">
+                    العنصر الذي يربط العناصر الأربعة معاً ليحول مشروعك من مجرد أفكار مبعثرة إلى منظومة برمجية متماسكة تحقق أرباحاً وتعمل ذاتياً.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="wrap section split" id="scope">
-      <div class="section-head"><div class="eyebrow">02 / دليل التكلفة</div><h2>النطاق أولاً.<br>ثم عرض السعر.</h2><p>قارن عروض التنفيذ بحسب المخرجات والمصاريف بعد الإطلاق. تتحدد تكلفة كل مشروع بعد تحديد الصفحات أو الوحدات واللغات والتكاملات.</p><a class="outline" href="#brief">حدّد احتياجك ↓</a></div>
-      <div class="accordion">
-        <details open><summary>ما الذي يغيّر التكلفة؟</summary><p>عدد الصفحات أو الوحدات، جاهزية المحتوى، مستوى تخصيص الواجهات، اللغات، وتكاملات الدفع أو الشحن أو الأنظمة الداخلية.</p></details>
-        <details><summary>كيف أقارن بين عرضين؟</summary><p>اطلب تحديد الصفحات والوظائف والتكاملات، ومواعيد التسليم، وآلية المراجعة، وما يشمله الدعم بعد الإطلاق.</p></details>
-        <details><summary>ما مصاريف التشغيل السنوية؟</summary><p>راجع تجديد النطاق والاستضافة وتراخيص الأدوات، إلى جانب النسخ الاحتياطي والتحديثات والصيانة.</p></details>
-        <details><summary>كيف أبدأ بنطاق أصغر؟</summary><p>حدّد أهم رحلة للمستخدم وأطلق المزايا اللازمة لها، ثم أضف بقية الخصائص على مراحل بعد اختبار الاستخدام الفعلي.</p></details>
-        <details><summary>ماذا أجهّز قبل طلب العرض؟</summary><p>حضّر هدف المشروع، الجمهور، أمثلة تعجبك، الأنظمة التي تحتاج إلى ربطها، وأي موعد أو ميزانية مستهدفة.</p></details>
+
+    <!-- Section 2: Core Capabilities & Solutions (باقة الخدمات والحلول) -->
+    <section class="section capabilities-section" id="capabilities">
+      <div class="wrap">
+        <div class="section-tag">
+          <span class="tag-number">02</span>
+          <span class="tag-text">القدرات الهندسية الأساسية · CORE CAPABILITIES</span>
+        </div>
+
+        <div class="section-heading-center">
+          <h2 class="section-title">
+            حلول هندسية مصممة للنمو، <span class="text-gradient">بدون قوالب جاهزة.</span>
+          </h2>
+          <p class="section-subtitle">
+            نغطي دورة حياة المنتج الرقمي كاملة؛ من المعمارية البرمجية المعقدة إلى واجهات المستخدم فائقة الأداء.
+          </p>
+        </div>
+
+        <div class="capabilities-grid">
+          
+          <!-- Card 1: AI & Automation -->
+          <article class="cap-card" data-card="ai">
+            <div class="cap-header">
+              <div class="cap-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <span class="cap-tag" dir="ltr">01 / AI & AGENTIC WORKFLOWS</span>
+            </div>
+            <h3 class="cap-title">الذكاء الاصطناعي والأتمتة الذكية</h3>
+            <p class="cap-desc">
+              تطوير وكلاء ذكاء اصطناعي (Autonomous Agents) وأتمتة مسارات العمل المعقدة؛ لتقليل التدخل اليدوي، خفض تكاليف التشغيل بنسب تتجاوز 60%، وتسريع الاستجابة لعملائك لحظياً.
+            </p>
+            <ul class="cap-features">
+              <li>وكلاء مخصصون لمعالجة الطلبات وخدمة العملاء (Custom AI Agents)</li>
+              <li>أتمتة إدخال وتحليل ومزامنة البيانات عبر أدوات الشركة</li>
+              <li>بناء قواعد معرفية ونماذج بحث دلالي (RAG & Vector Search)</li>
+            </ul>
+            <div class="cap-footer">
+              <span class="tech-pills" dir="ltr">Python · LangGraph · OpenAI / Claude · Pinecone</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Custom Software & SaaS -->
+          <article class="cap-card" data-card="saas">
+            <div class="cap-header">
+              <div class="cap-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <span class="cap-tag" dir="ltr">02 / CUSTOM SOFTWARE & SAAS</span>
+            </div>
+            <h3 class="cap-title">تطوير البرمجيات المخصصة والـ SaaS</h3>
+            <p class="cap-desc">
+              بناء أنظمة سحابية متقدمة وتطبيقات مؤسسات (Enterprise Platforms) مصممة من الصفر لتناسب منطق عملك الخاص، وقابلة للتوسع لتحمل ملايين العمليات المتزامنة بكفاءة.
+            </p>
+            <ul class="cap-features">
+              <li>منصات SaaS ولوحات تحكم متطورة متعددة الصلاحيات (RBAC)</li>
+              <li>بوابات رقمية آمنة للموردين والعملاء (Client Portals)</li>
+              <li>معماريات سحابية مصغرة (Microservices & Serverless)</li>
+            </ul>
+            <div class="cap-footer">
+              <span class="tech-pills" dir="ltr">Node.js · Go · TypeScript · PostgreSQL · Docker</span>
+            </div>
+          </article>
+
+          <!-- Card 3: Systems & API Integration -->
+          <article class="cap-card" data-card="integration">
+            <div class="cap-header">
+              <div class="cap-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+              </div>
+              <span class="cap-tag" dir="ltr">03 / SYSTEMS & API INTEGRATION</span>
+            </div>
+            <h3 class="cap-title">تكامل وربط الأنظمة وقواعد البيانات</h3>
+            <p class="cap-desc">
+              القضاء التام على جزر البيانات المنفصلة. نربط أنظمة الـ ERP ومخازنك وبوابات الدفع وبرامج الـ CRM في شبكة متزامنة تعمل آلياً كجسد واحد بدون أخطاء بشرية.
+            </p>
+            <ul class="cap-features">
+              <li>ربط المتاجر الإلكترونية بأنظمة ERP والمستودعات والشحن</li>
+              <li>بناء وتأمين واجهات برمجة التطبيقات (High-Throughput APIs & Webhooks)</li>
+              <li>مزامنة فورية للبيانات بين البرامج السحابية والمحلية (Hybrid Sync)</li>
+            </ul>
+            <div class="cap-footer">
+              <span class="tech-pills" dir="ltr">REST / GraphQL · gRPC · Kafka · Redis · Webhooks</span>
+            </div>
+          </article>
+
+          <!-- Card 4: UI/UX Engineering -->
+          <article class="cap-card" data-card="uiux">
+            <div class="cap-header">
+              <div class="cap-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              </div>
+              <span class="cap-tag" dir="ltr">04 / UI/UX ENGINEERING</span>
+            </div>
+            <h3 class="cap-title">تصميم واجهات وتجربة المستخدم الحديثة</h3>
+            <p class="cap-desc">
+              لا نصنع تصاميم شكلية؛ بل واجهات هندسية مدروسة نفسياً وتقنياً ترفع معدل التحويل (Conversion Rate)، وتجعل التعامل مع أكثر الأنظمة تعقيداً تجربة ممتعة وسهلة.
+            </p>
+            <ul class="cap-features">
+              <li>تصميم أنظمة تصميم موحدة (Design Systems & Components)</li>
+              <li>واجهات تفاعلية سريعة الاستجابة بأعلى معايير الـ UX العالمية</li>
+              <li>دراسة سلوك المستخدم وتحسين رحلة العميل من أول نقرة</li>
+            </ul>
+            <div class="cap-footer">
+              <span class="tech-pills" dir="ltr">Figma · Next.js · Tailwind · Web Vitals Optimization</span>
+            </div>
+          </article>
+
+          <!-- Card 5: Startup MVP & Launchpad -->
+          <article class="cap-card featured" data-card="mvp">
+            <div class="cap-header">
+              <div class="cap-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <span class="cap-tag" dir="ltr">05 / STARTUP MVP & LAUNCHPAD</span>
+            </div>
+            <h3 class="cap-title">تمكين الشركات الناشئة وإطلاق الـ MVP</h3>
+            <p class="cap-desc">
+              نأخذ فكرتك من مرحلة التخطيط إلى منتج حي في يد العميل والمستثمرين خلال أسابيع معدودة، مع بنية كود قوية جاهزة للتوسع ولا تحتاج إلى إعادة بناء بعد الجولة الاستثمارية.
+            </p>
+            <ul class="cap-features">
+              <li>بناء نموذج أولي كامل الوظائف والتحقق من السوق (Production MVP)</li>
+              <li>مواقع تعريفية تفاعلية فائقة السرعة للمنتج والمستثمرين</li>
+              <li>استشارات تقنية وتجهيز العروض الفنية (Tech Pitch Decks)</li>
+            </ul>
+            <div class="cap-footer">
+              <span class="tech-pills" dir="ltr">Agile Sprints · Rapid Prototyping · Cloud Architecture</span>
+            </div>
+          </article>
+
+        </div>
       </div>
     </section>
-    <section class="wrap section" id="process">
-      <div class="section-head"><div class="eyebrow">03 / طريقة العمل</div><h2>من أول جلسة إلى الإطلاق.</h2></div>
-      <ol class="steps"><li><span>01</span><h3>نفهم ونحدّد</h3><p>نرسم رحلة المستخدم ونحدد المخرجات والتكاملات والأولويات.</p></li><li><span>02</span><h3>نصمّم ونطوّر</h3><p>نحوّل النطاق إلى واجهات قابلة للمراجعة، ثم نربط المكونات ونختبرها.</p></li><li><span>03</span><h3>نُطلق ونسلّم</h3><p>نراجع التشغيل ونرتّب تسليم الصلاحيات والتوثيق وخطة الدعم حسب الاتفاق.</p></li></ol>
-    </section>
-    <section class="wrap section split" id="faq">
-      <div class="section-head"><div class="eyebrow">04 / الأسئلة الشائعة</div><h2>قبل ما تبدأ.</h2></div>
-      <div class="accordion">
-        <details><summary>هل يمكن تنفيذ موقع عربي وإنجليزي؟</summary><p>يمكن تحديد اللغات ضمن النطاق، مع تصميم يراعي اتجاه القراءة والمحتوى لكل لغة.</p></details>
-        <details><summary>هل يمكن ربط متجر قائم بنظام ERP؟</summary><p>نراجع أولًا طرق الربط التي يوفّرها كل نظام والبيانات المراد مزامنتها، ثم نحدّد مسار التنفيذ.</p></details>
-        <details><summary>هل يمكن تطوير نظام موجود بالفعل؟</summary><p>نراجع التقنية الحالية والكود المتاح ومشاكل التشغيل لتحديد نطاق التحسين والتكامل.</p></details>
+
+    <!-- Section 3: Interactive Architecture Sandbox (معمل المعماريات التفاعلي) -->
+    <section class="section sandbox-section" id="sandbox">
+      <div class="wrap">
+        <div class="section-tag">
+          <span class="tag-number">03</span>
+          <span class="tag-text">المعمارية التقنية التفاعلية · ARCHITECTURE SANDBOX</span>
+        </div>
+
+        <div class="section-heading-center">
+          <h2 class="section-title">
+            شاهد كيف يعمل <span class="text-gradient">AETHER</span> في الكواليس.
+          </h2>
+          <p class="section-subtitle">
+            اختر سيناريو لتشاهد محاكاة حية لطريقة انتقال البيانات والأتمتة الذكية في أنظمتنا:
+          </p>
+        </div>
+
+        <div class="sandbox-container">
+          <!-- Sandbox Controls / Tabs -->
+          <div class="sandbox-nav" role="tablist">
+            <button class="sandbox-tab active" data-flow="ai-agent">
+              <span class="tab-icon">🤖</span>
+              <span class="tab-text">أتمتة مسار ذكاء اصطناعي (Agentic Workflow)</span>
+            </button>
+            <button class="sandbox-tab" data-flow="erp-sync">
+              <span class="tab-icon">🔄</span>
+              <span class="tab-text">مزامنة متجر + ERP + مستودعات (System Sync)</span>
+            </button>
+            <button class="sandbox-tab" data-flow="saas-scale">
+              <span class="tab-icon">⚡</span>
+              <span class="tab-text">معمارية منصة سحابية آمنة (Enterprise SaaS)</span>
+            </button>
+          </div>
+
+          <!-- Interactive Visualization Box -->
+          <div class="sandbox-display">
+            <div class="display-top" dir="ltr">
+              <div class="status-indicator">
+                <span class="pulse-green"></span>
+                <span id="flow-status">SIMULATION: AGENTIC_WORKFLOW_ACTIVE</span>
+              </div>
+              <div class="latency-readout">
+                <span>LATENCY: </span><strong id="flow-latency">14ms</strong>
+                <span class="sep">|</span>
+                <span>STATUS: </span><strong>200 OK</strong>
+              </div>
+            </div>
+
+            <!-- Pipeline Diagram -->
+            <div class="pipeline-flow" id="pipeline-flow">
+              <div class="flow-step" id="step-1">
+                <div class="step-badge">INPUT</div>
+                <div class="step-card">
+                  <h4 id="step-1-title">مدخلات العميل / النظام</h4>
+                  <p id="step-1-desc">طلب شراء، رسالة دعم، أو تحديث مخزون فوري</p>
+                </div>
+              </div>
+
+              <div class="flow-arrow">
+                <div class="flowing-packet"></div>
+                <span class="arrow-symbol">←</span>
+              </div>
+
+              <div class="flow-step active-engine" id="step-2">
+                <div class="step-badge">AETHER CORE</div>
+                <div class="step-card core-card">
+                  <h4 id="step-2-title">معالجة إيثر الذكية</h4>
+                  <p id="step-2-desc">تحليل النماذج، التحقق من الصلاحيات، والتوجيه الذاتي</p>
+                </div>
+              </div>
+
+              <div class="flow-arrow">
+                <div class="flowing-packet delay"></div>
+                <span class="arrow-symbol">←</span>
+              </div>
+
+              <div class="flow-step" id="step-3">
+                <div class="step-badge">OUTPUT</div>
+                <div class="step-card">
+                  <h4 id="step-3-title">النتيجة التلقائية</h4>
+                  <p id="step-3-desc">تنفيذ الإجراء، تحديث قواعد البيانات، وإشعار الأطراف</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Terminal Output -->
+            <div class="sandbox-terminal" dir="ltr">
+              <div class="terminal-bar">
+                <span class="terminal-file">aether-runtime.log</span>
+                <button class="btn-rerun" id="btn-rerun-sim">إعادة تشغيل المحاكاة ⟳</button>
+              </div>
+              <div class="terminal-logs" id="terminal-logs">
+                <div class="log-line"><span class="log-time">[00:00.01]</span> <span class="log-info">[INIT]</span> Initializing Aether Agentic Pipeline...</div>
+                <div class="log-line"><span class="log-time">[00:00.04]</span> <span class="log-success">[READY]</span> 5 Founding Engineering Nodes synchronized.</div>
+                <div class="log-line highlight"><span class="log-time">[00:00.12]</span> <span class="log-proc">[AGENT]</span> Autonomous workflow executing without human bottleneck.</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="wrap section" id="brief">
-      <div class="brief split">
-        <div class="section-head"><div class="eyebrow">05 / جهّز طلب مشروعك</div><h2>احكِ لنا عن الفكرة.</h2><p>كوّن ملخصًا لمشاركته مع فريقك. تقدر تنزّل الملف من المتصفح بعد مراجعته.</p></div>
-        <form id="project-form">
-          <label>نوع المشروع<select name="type" required><option value="">اختر الخدمة</option><option value="web">موقع إلكتروني</option><option value="store">متجر إلكتروني</option><option value="erp">نظام ERP</option><option value="custom">برمجيات مخصصة</option></select></label>
-          <label>السوق المستهدف<select name="region"><option>مصر</option><option>الخليج</option><option>الوطن العربي</option><option>أكثر من سوق</option></select></label>
-          <label>ما الذي تريد تحقيقه؟<textarea name="notes" rows="4" maxlength="3000" required placeholder="اكتب فكرة المشروع وأهم الوظائف المطلوبة"></textarea></label>
-          <button class="button" type="submit">معاينة الملخص <span>↖</span></button>
-          <div id="result" hidden><pre id="summary"></pre><button class="outline" id="download" type="button">تنزيل الملخص ↓</button></div>
-        </form>
+
+    <!-- Section 4: Team & Fractional CTO Model (نموذج الـ 5 مهندسين) -->
+    <section class="section model-section" id="model">
+      <div class="wrap">
+        <div class="section-tag">
+          <span class="tag-number">04</span>
+          <span class="tag-text">فريق العمل ونموذج الشراكة · THE 5 FOUNDING ENGINEERS</span>
+        </div>
+
+        <div class="split-layout align-center">
+          <div class="split-col-text">
+            <h2 class="section-title">
+              فريق هندسي متكامل، <br>
+              <span class="text-gradient">بدون تكاليف توظيف مرتفعة.</span>
+            </h2>
+            <p class="section-desc-lead">
+              بدلاً من إضاعة شهور في مقابلات التوظيف وتحمل رواتب مكتب CTO ومديري مشاريع ومطوري واجهات وخلفيات ومهندسي ذكاء اصطناعي؛ <strong>AETHER</strong> يضع بين يديك فريقاً متكاملاً من 5 مهندسين مؤسسين يعملون بتناغم مثبت منذ اليوم الأول.
+            </p>
+
+            <div class="team-composition">
+              <div class="comp-item">
+                <span class="comp-num">01</span>
+                <div class="comp-info">
+                  <strong>مهندس ذكاء اصطناعي وأتمتة (AI & Agentic Systems)</strong>
+                  <span>بناء النماذج، أتمتة الإجراءات وربط الـ LLMs بقواعد البيانات</span>
+                </div>
+              </div>
+              <div class="comp-item">
+                <span class="comp-num">02</span>
+                <div class="comp-info">
+                  <strong>مهندس برمجيات ونظم خلفية (Full-Stack & Backend Architect)</strong>
+                  <span>معماريات السحاب، قواعد البيانات الضخمة، والأنظمة الموزعة</span>
+                </div>
+              </div>
+              <div class="comp-item">
+                <span class="comp-num">03</span>
+                <div class="comp-info">
+                  <strong>مهندس تكامل وربط نظم (Systems & API Integration Engineer)</strong>
+                  <span>ربط الـ ERP، بوابات الدفع، الـ Webhooks، والشبكات السحابية</span>
+                </div>
+              </div>
+              <div class="comp-item">
+                <span class="comp-num">04</span>
+                <div class="comp-info">
+                  <strong>مهندس واجهات وتجربة مستخدم (Frontend & UI/UX Engineer)</strong>
+                  <span>بناء تطبيقات تفاعلية فائقة السرعة وأنظمة تصميم موحدة</span>
+                </div>
+              </div>
+              <div class="comp-item">
+                <span class="comp-num">05</span>
+                <div class="comp-info">
+                  <strong>مهندس جودة وبنية سحابية (DevOps & Security Engineer)</strong>
+                  <span>أمان البيانات، إدارة الخوادم، واستمرارية العمل دون توقف 99.9%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comparison Table -->
+          <div class="split-col-visual">
+            <div class="comparison-card">
+              <h3 class="comp-card-title">مقارنة نموذج الشراكة التقنية:</h3>
+              <div class="table-responsive">
+                <table class="comp-table">
+                  <thead>
+                    <tr>
+                      <th>وجه المقارنة</th>
+                      <th>التوظيف الداخلي الكامل</th>
+                      <th>الشركات التقليدية</th>
+                      <th class="col-aether">شراكة AETHER</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>سرعة بدء العمل</td>
+                      <td>2 - 4 أشهر (مقابلات وعقود)</td>
+                      <td>أسابيع من الإجراءات البيروقراطية</td>
+                      <td class="col-aether"><strong>خلال 48 ساعة مباشرة</strong></td>
+                    </tr>
+                    <tr>
+                      <td>التكلفة الشهرية</td>
+                      <td>رواتب باهظة + تأمينات وإداريات</td>
+                      <td>تكاليف خفية وهوامش غير مبررة</td>
+                      <td class="col-aether"><strong>نطاق محدد واستثمار عادل</strong></td>
+                    </tr>
+                    <tr>
+                      <td>التواصل والتنفيذ</td>
+                      <td>يحتاج إدارة يومية ومتابعة</td>
+                      <td>مندوب مبيعات وسيط غير تقني</td>
+                      <td class="col-aether"><strong>تواصل مباشر مع المهندسين</strong></td>
+                    </tr>
+                    <tr>
+                      <td>جودة الكود والبنية</td>
+                      <td>متفاوتة بحسب خبرة الموظف</td>
+                      <td>قوالب متكررة جاهزة</td>
+                      <td class="col-aether"><strong>أكواد نقية مخصصة وتوثيق كامل</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-note">
+                💡 النتيجة: تحصل على كفاءة الـ Fractional CTO وفريق متكامل، مع مرونة تامة لتوجيه طاقتك نحو نمو مبيعاتك.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- Section 5: The 30-Second Exhibition Pitch (عرض الـ 30 ثانية في المعرض) -->
+    <section class="section pitch-section" id="pitch">
+      <div class="wrap">
+        <div class="pitch-container">
+          <div class="pitch-header">
+            <span class="pitch-tag">عرض الـ 30 ثانية في المعارض · THE ELEVATOR PITCH</span>
+            <div class="pitch-timer" dir="ltr">⏱ 30 SECONDS</div>
+          </div>
+
+          <blockquote class="pitch-quote">
+            "مساء الخير، إحنا فريق تأسيسي من <strong>5 مهندسين</strong>، شركتنا <strong>Aether</strong>. بنقدّم حلول برمجيات وذكاء اصطناعي متكاملة، وبنساعد الشركات في أتمتة عملياتها وربط أنظمتها الرقمية بأعلى كفاءة.
+            <br><br>
+            زي ما الإيثر هو القوة الخفية اللي بتربط الكون ببعضه، إحنا <strong>الذراع التقني الخفي</strong> اللي بيكمل فريقكم ويدير بنيتكم الرقمية بسلاسة وبدون تعقيد في الكواليس."
+          </blockquote>
+
+          <div class="pitch-footer">
+            <div class="founder-identity">
+              <span class="founders-badge">فريق المهندسين المؤسسين · AETHER FOUNDING TEAM</span>
+              <span class="location-badge">📍 القاهرة، مصر · نخدم العملاء محلياً وإقليمياً</span>
+            </div>
+            <a class="btn btn-primary" href="https://wa.me/201061258009?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%B4%D8%A7%D9%87%D8%AF%D8%AA%20%D8%B9%D8%B1%D8%B6%20AETHER%20%D9%88%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84." target="_blank" rel="noopener">
+              <span>تواصل مع المهندسين مباشرة</span>
+              <span class="icon" dir="ltr">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Interactive Scope Calculator & Brief Builder (حاسبة النطاق وملخص المشروع) -->
+    <section class="section scope-section" id="scope">
+      <div class="wrap">
+        <div class="section-tag">
+          <span class="tag-number">05</span>
+          <span class="tag-text">حاسبة النطاق وتجهيز الطلب · SCOPE CALCULATOR</span>
+        </div>
+
+        <div class="split-layout">
+          <div class="split-col-text">
+            <h2 class="section-title">
+              حدّد متطلبات مشروعك، <br>
+              <span class="text-gradient">واحصل على ملخص فوري.</span>
+            </h2>
+            <p class="section-desc">
+              اختر نوع الخدمة والنطاق الفني؛ لنجهّز لك ملخصاً هندسياً دقيقاً يمكنك مراجعته، تنزيله، أو إرساله فوراً للمهندسين بنقرة واحدة عبر واتساب.
+            </p>
+
+            <div class="contact-box-direct">
+              <h4>أو تواصل معنا مباشرة الآن:</h4>
+              <ul class="direct-list">
+                <li>
+                  <span class="direct-icon">💬</span>
+                  <a href="https://wa.me/201061258009" target="_blank" rel="noopener" dir="ltr">+20 106 125 8009 (واتساب / هاتف)</a>
+                </li>
+                <li>
+                  <span class="direct-icon">✉</span>
+                  <a href="mailto:tarekattallah00@gmail.com" dir="ltr">tarekattallah00@gmail.com</a>
+                </li>
+                <li>
+                  <span class="direct-icon">📍</span>
+                  <span>المقر: القاهرة، جمهورية مصر العربية</span>
+                </li>
+                <li>
+                  <span class="direct-icon">🌐</span>
+                  <a href="https://tarekattallah.github.io/Aether/" dir="ltr">tarekattallah.github.io/Aether</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="split-col-visual">
+            <div class="brief-card">
+              <form id="aether-brief-form">
+                <div class="form-row">
+                  <label for="project-service">الحل التقني المطلوب *</label>
+                  <select id="project-service" name="service" required>
+                    <option value="">اختر مجال الخدمة</option>
+                    <option value="ai">حلول الذكاء الاصطناعي والأتمتة (AI & Agentic Workflows)</option>
+                    <option value="saas">تطوير برمجيات مخصصة ومنصة SaaS</option>
+                    <option value="integration">تكامل وربط أنظمة الـ ERP وقواعد البيانات</option>
+                    <option value="uiux">تصميم وهندسة واجهات وتجربة المستخدم (UI/UX)</option>
+                    <option value="mvp">إطلاق منتج أولي لشركة ناشئة (Startup MVP)</option>
+                    <option value="fractional-cto">شراكة مكتب تقني متكامل (Fractional CTO Team)</option>
+                  </select>
+                </div>
+
+                <div class="form-row grid-2">
+                  <div>
+                    <label for="project-region">السوق المستهدف</label>
+                    <select id="project-region" name="region">
+                      <option value="مصر">مصر</option>
+                      <option value="الخليج العربي (السعودية، الإمارات، قطر، الكويت)">الخليج العربي</option>
+                      <option value="الوطن العربي عموماً">الوطن العربي عموماً</option>
+                      <option value="سوق عالمي / دولي">سوق عالمي / دولي</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="project-timeline">الجدول الزمني المستهدف</label>
+                    <select id="project-timeline" name="timeline">
+                      <option value="عاجل (خلال 2-4 أسابيع)">عاجل (خلال 2 - 4 أسابيع)</option>
+                      <option value="مرحلي (خلال 1-3 أشهر)" selected>مرحلي (خلال 1 - 3 أشهر)</option>
+                      <option value="شراكة مستمرة طويلة الأجل">شراكة مستمرة طويلة الأجل</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <label for="project-notes">شرح موجز عن الفكرة وأهم الوظائف المطلوبة *</label>
+                  <textarea id="project-notes" name="notes" rows="4" required placeholder="اكتب نبذة عن مشروعك، التحديات التي تواجهك، أو الأنظمة التي تريد ربطها وأتمتتها..."></textarea>
+                </div>
+
+                <div class="form-row">
+                  <button type="submit" class="btn btn-primary full-width" id="btn-generate-brief">
+                    <span>توليد الملخص الهندسي</span>
+                    <span class="icon">↙</span>
+                  </button>
+                </div>
+
+                <!-- Result Box -->
+                <div id="brief-result" class="brief-result" hidden>
+                  <div class="result-header">
+                    <span class="result-badge">ملخص نطاق المشروع جاهز</span>
+                    <span class="result-id" dir="ltr" id="brief-timestamp">ID: AETHER-SPEC</span>
+                  </div>
+                  <pre id="brief-summary" class="summary-code" dir="rtl"></pre>
+                  
+                  <div class="result-actions">
+                    <a id="btn-whatsapp-send" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener">
+                      <span>إرسال فوراً إلى واتساب المهندسين</span>
+                      <span class="icon" dir="ltr">↗</span>
+                    </a>
+                    <button type="button" class="btn btn-secondary" id="btn-download-brief">
+                      <span>تنزيل الملف (TXT) ↓</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: FAQ (الأسئلة الشائعة) -->
+    <section class="section faq-section" id="faq">
+      <div class="wrap">
+        <div class="section-tag">
+          <span class="tag-number">06</span>
+          <span class="tag-text">الأسئلة الشائعة · FREQUENTLY ASKED QUESTIONS</span>
+        </div>
+
+        <div class="split-layout">
+          <div class="split-col-text">
+            <h2 class="section-title">
+              إجابات واضحة <br>
+              <span class="text-gradient">قبل أن نبدأ معاً.</span>
+            </h2>
+            <p class="section-desc">
+              نؤمن بالشفافية الكاملة في الملكية الفكرية، طريقة العمل، والتسليم.
+            </p>
+          </div>
+
+          <div class="split-col-visual">
+            <div class="faq-accordion">
+              <details class="faq-item" open>
+                <summary>
+                  <span>من يملك الكود المصدري (Source Code) والملكية الفكرية للمشروع؟</span>
+                  <span class="faq-marker">+</span>
+                </summary>
+                <div class="faq-body">
+                  <p>
+                    أنت وفريقك تملكون <strong>100% من الكود المصدري وقواعد البيانات والتصميمات</strong> بمجرد التسليم. نقوم بإنشاء المستودعات باسم شركتكم مع توثيق تقني كامل (Documentation) لتكون حراً تماماً في إدارته أو توسعته مستقبلاً دون أي تبعية أو احتكار.
+                  </p>
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span>كيف تختلف حلول الـ AI الخاصة بكم عن أدوات الذكاء الاصطناعي الجاهزة؟</span>
+                  <span class="faq-marker">+</span>
+                </summary>
+                <div class="faq-body">
+                  <p>
+                    الأدوات الجاهزة عامة ولا ترتبط بمنطق شركتك أو بياناتك الخاصة. في <strong>AETHER</strong> نبني مسارات عمل ذكية (Agentic Workflows) مخصصة تعمل داخل خوادمك، ترتبط مباشرة بأنظمتك وقواعد بياناتك، وتتحرك كعضو موثوق في فريقك ينفذ المهام المعقدة بدقة وأمان.
+                  </p>
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span>لدينا أنظمة قديمة أو برامج محاسبية/ERP، هل يمكن ربطها وأتمتتها؟</span>
+                  <span class="faq-marker">+</span>
+                </summary>
+                <div class="faq-body">
+                  <p>
+                    نعم تماماً؛ هذه إحدى نقاط قوتنا الرئيسية (Systems & API Integration). نقوم بدراسة واجهات الربط وقواعد البيانات ونبني جسوراً برمجية آمنة تزامن المبيعات والمخازن والعملاء فورياً بدون الحاجة لتغيير أنظمتكم الحالية أو تعطيل سير العمل.
+                  </p>
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span>كم يستغرق إطلاق نموذج أولي (MVP) جاهز للسوق؟</span>
+                  <span class="faq-marker">+</span>
+                </summary>
+                <div class="faq-body">
+                  <p>
+                    بفضل هيكلتنا الرشيقة (5 مهندسين متخصصين وبدون بيروقراطية الشركات الكبيرة)، ننجز المنتجات الأولية القابلة للاختبار في السوق غالباً بين <strong>3 إلى 6 أسابيع</strong> بمعايير جاهزة لتحمل أول دفعة مستخدمين حقيقيين ومستثمرين.
+                  </p>
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span>كيف تتم آلية التواصل وإدارة المهام أثناء المشروع؟</span>
+                  <span class="faq-marker">+</span>
+                </summary>
+                <div class="faq-body">
+                  <p>
+                    تتواصل مباشرة مع المهندسين عبر قناة مخصصة (Slack أو WhatsApp)، مع دورات تسليم أسبوعية (Weekly Sprints) ولوحة متابعة واضحة ترى من خلالها كل مهمة يتم اختبارها ورفعها أولاً بأول.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
-  <footer class="wrap footer"><a class="brand" href="#home" dir="ltr"><span class="mark">Q</span> Quin<span>Tech</span></a><span>حلول برمجية للأعمال · مصر والخليج والوطن العربي</span><a href="#home">العودة للأعلى ↑</a></footer>
+
+  <!-- High-End Dark Engineering Footer -->
+  <footer class="site-footer">
+    <div class="wrap footer-content">
+      <div class="footer-brand-col">
+        <a class="brand" href="#home" dir="ltr">
+          <span class="aether-symbol">
+            <svg viewBox="0 0 40 40" width="24" height="24" fill="none">
+              <polygon points="20,4 35,15 30,33 10,33 5,15" stroke="var(--cyan)" stroke-width="2" fill="rgba(0, 242, 254, 0.15)"/>
+              <circle cx="20" cy="20" r="3.5" fill="var(--cyan)"/>
+            </svg>
+          </span>
+          <span class="brand-text">AETHER</span>
+        </a>
+        <p class="footer-tagline">The Invisible Force Behind Intelligent Systems</p>
+        <p class="footer-sub">العنصر الخامس في البرمجيات والذكاء الاصطناعي · فريق الـ 5 مهندسين المؤسسين</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>المجالات والحلول</h4>
+        <ul>
+          <li><a href="#capabilities">الذكاء الاصطناعي والأتمتة</a></li>
+          <li><a href="#capabilities">تطوير البرمجيات المخصصة</a></li>
+          <li><a href="#capabilities">تكامل وربط الأنظمة</a></li>
+          <li><a href="#capabilities">تصميم تجربة المستخدم (UI/UX)</a></li>
+          <li><a href="#capabilities">إطلاق منتجات الـ MVP</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>بيانات التواصل الرسمية</h4>
+        <ul class="contact-meta">
+          <li><strong>واتساب / هاتف:</strong> <a href="https://wa.me/201061258009" target="_blank" rel="noopener" dir="ltr">+20 106 125 8009</a></li>
+          <li><strong>البريد الرسمي:</strong> <a href="mailto:tarekattallah00@gmail.com" dir="ltr">tarekattallah00@gmail.com</a></li>
+          <li><strong>الموقع:</strong> <a href="https://tarekattallah.github.io/Aether/" dir="ltr">tarekattallah.github.io/Aether</a></li>
+          <li><strong>المقر:</strong> القاهرة، مصر</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom wrap">
+      <span>© 2026 AETHER. All rights reserved. Engineering with purpose.</span>
+      <div class="footer-bottom-links">
+        <a href="#home">العودة للأعلى ↑</a>
+        <a href="https://github.com/Tarekattallah/Aether" target="_blank" rel="noopener">GitHub Repo ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Quick Contact Action -->
+  <div class="floating-contact" id="floating-contact">
+    <a href="https://wa.me/201061258009" target="_blank" rel="noopener" class="float-btn" aria-label="تواصل عبر واتساب">
+      <span class="float-icon">💬</span>
+      <span class="float-text">تحدث مع المهندسين</span>
+    </a>
+  </div>
+
 </body>
 </html>
